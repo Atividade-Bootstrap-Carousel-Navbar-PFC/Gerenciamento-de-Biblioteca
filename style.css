@@ -1,0 +1,142 @@
+:root {
+  --color-bg: #f5efe6;
+  --color-dark: #2f2a24;
+  --color-primary: #2f6e51;
+  --color-accent: #c1502e;
+  --color-purple: #7d5ba6;
+  --color-blue: #2b6693;
+  --color-muted: #6b6459;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-bg);
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-dark);
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f5efe6 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #e7e0d4 !important;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Carousel */
+header#inicio {
+  margin-top: 56px;
+}
+
+.carousel-item img {
+  height: 65vh;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(47, 42, 36, 0.6);
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--color-dark);
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.section-alt {
+  background-color: #ece3d3;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: var(--color-accent);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+.section-text {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Feature cards */
+.feature-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(47, 42, 36, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(47, 42, 36, 0.14);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Team */
+.team-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 6px 18px rgba(47, 42, 36, 0.08);
+}
+
+.team-avatar {
+  font-size: 2.8rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-dark);
+  color: #e7e0d4;
+  padding: 3rem 0;
+}
